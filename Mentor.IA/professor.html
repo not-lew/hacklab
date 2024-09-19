@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentor.IA - Professor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Mentor.AI</h1>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#" id="perfil-button">Perfil</a></li>
+                <li><a href="#" id="ies-link">IES</a></li>
+                <li><a href="#" id="sair-link">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Professor</h1>
+        <label for="select-aluno">Escolha o Aluno:</label>
+        <select id="select-aluno">
+            <option value="">Selecione um aluno</option>
+            <option value="aluno1">Aluno 1</option>
+            <option value="aluno2">Aluno 2</option>
+            <option value="aluno3">Aluno 3</option>
+        </select>
+        <!-- Dashboard do Aluno -->
+        <div id="dashboard-aluno" style="display:none;">
+            <h2>Desempenho do Aluno</h2>
+            <div class="dashboard-container">
+                <!-- Estatísticas Gerais -->
+                <div class="stats">
+                    <div class="stat">
+                        <h3>Notas</h3>
+                        <p id="nota-aluno">85%</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Presença</h3>
+                        <p id="presenca-aluno">95%</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Tarefas Entregues</h3>
+                        <p id="tarefas-aluno">12/15</p>
+                    </div>
+                </div>
+                <!-- Gráfico de Desempenho -->
+                <div class="chart">
+                    <canvas id="desempenho-chart"></canvas>
+                </div>
+                <!-- Comentários -->
+                <div class="comments">
+                    <h3>Comentários</h3>
+                    <textarea id="comentarios-professor" placeholder="Adicione seus comentários sobre o aluno..."></textarea>
+                    <button id="salvar-comentarios">Salvar Comentários</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Adicione a biblioteca Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.login-container h1 {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#login-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#login-form button:disabled,
+#login-form input:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Estilos para o Dashboard do Aluno */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.stat h3 {
+    margin-bottom: 10px;
+}
+
+.chart {
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+.comments {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.comments textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.comments button {
+    display: block;
+    margin-left: auto;
+}
+/* Estilos para o Quiz */
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+#quiz-feedback {
+    margin-top: 30px;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border: 1px solid #00796b;
+}
+
+#feedback-message {
+    font-size: 18px;
+}
+
+button#submit-quiz {
+    padding: 10px 20px;
+}
+
+/* Estilos para a IES */
+
+.progress-bar {
+    width: 80%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    margin: 20px auto;
+    height: 25px;
+}
+
+.progress {
+    background-color: #76c7c0;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    width: 0%;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+}
+
+#progress-text {
+    text-align: center;
+    font-weight: bold;
+}
+
+#satisfacao-alunos {
+    width: 80%;
+    margin: 40px auto;
+}
+
+#lista-professores {
+    width: 80%;
+    margin: 40px auto;
+}
+
+#tabela-professores {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabela-professores th, #tabela-professores td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#tabela-professores th {
+    background-color: #f0f0f0;
+}
+
+/* Estilos para o Header */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para destaque */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center; /* Centraliza o conteúdo interno */
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form input {
+    padding: 5px;
+    margin: 10px 0;
+}
+
+#login-form button {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#login-form button:disabled,
+#login-form input:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilos existentes continuam iguais */
+/* ... (restante do styles.css permanece igual) */

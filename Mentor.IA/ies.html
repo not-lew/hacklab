@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentor.IA - IES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Mentor.AI</h1>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#" id="aluno-link">Aluno</a></li>
+                <li><a href="#" id="professor-link">Professor</a></li>
+                <li><a href="#" id="sair-link">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Informações da IES</h1>
+
+        <!-- Barra de Quantidade de Alunos Conectados com o Professor -->
+        <section id="alunos-conectados">
+            <h2>Alunos Conectados com o Professor</h2>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <p id="progress-text"></p>
+        </section>
+
+        <!-- Gráfico de Satisfação dos Alunos com os Professores -->
+        <section id="satisfacao-alunos">
+            <h2>Satisfação dos Alunos com os Professores</h2>
+            <canvas id="satisfacao-chart"></canvas>
+        </section>
+
+        <!-- Grade com Todos os Professores -->
+        <section id="lista-professores">
+            <h2>Lista de Professores</h2>
+            <table id="tabela-professores">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Especialidade</th>
+                        <th>Método de Ensino</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas serão inseridas via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- Adicione a biblioteca Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

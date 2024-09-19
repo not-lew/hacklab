@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentor.IA - Atividade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Mentor.AI</h1>
+            </div>
+            <ul>
+                <li><a href="aluno.html">Voltar</a></li>
+                <li><a href="#" id="ies-link">IES</a></li>
+                <li><a href="#" id="sair-link">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Quiz de Conhecimentos</h1>
+        <form id="quiz-form">
+            <!-- Pergunta 1 -->
+            <div class="quiz-question">
+                <p><strong>1. Qual é a capital do Brasil?</strong></p>
+                <label><input type="radio" name="question1" value="Rio de Janeiro"> Rio de Janeiro</label><br>
+                <label><input type="radio" name="question1" value="Brasília"> Brasília</label><br>
+                <label><input type="radio" name="question1" value="São Paulo"> São Paulo</label><br>
+                <label><input type="radio" name="question1" value="Salvador"> Salvador</label>
+            </div>
+            <!-- Pergunta 2 -->
+            <div class="quiz-question">
+                <p><strong>2. Qual é o resultado de 2 + 2?</strong></p>
+                <label><input type="radio" name="question2" value="3"> 3</label><br>
+                <label><input type="radio" name="question2" value="4"> 4</label><br>
+                <label><input type="radio" name="question2" value="5"> 5</label><br>
+                <label><input type="radio" name="question2" value="6"> 6</label>
+            </div>
+            <!-- Pergunta 3 -->
+            <div class="quiz-question">
+                <p><strong>3. Quem escreveu 'Dom Casmurro'?</strong></p>
+                <label><input type="radio" name="question3" value="Machado de Assis"> Machado de Assis</label><br>
+                <label><input type="radio" name="question3" value="Clarice Lispector"> Clarice Lispector</label><br>
+                <label><input type="radio" name="question3" value="Monteiro Lobato"> Monteiro Lobato</label><br>
+                <label><input type="radio" name="question3" value="Jorge Amado"> Jorge Amado</label>
+            </div>
+            <!-- Botão de Submissão -->
+            <button type="button" id="submit-quiz">Enviar Respostas</button>
+        </form>
+        <!-- Área de Feedback -->
+        <div id="quiz-feedback" style="display:none;">
+            <h2>Feedback</h2>
+            <p id="feedback-message"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
